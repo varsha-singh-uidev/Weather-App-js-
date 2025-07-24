@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100%;
+}
+/* style the container */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* style the card */
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    background: linear-gradient(155deg, #9985c7 20%, #ecb8dd 100%);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+.head{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.search_container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(62, 61, 61);
+    box-shadow: 0 2px 6px rgba(21, 21, 21, 0.1);
+    transition: background 0.2s ease-in, box-shadow 0.3s ease-in;
+
+}
+.input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.input:hover{
+    background-color: #efefef;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.search{
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 2px 6px rgba(21, 21, 21, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease-in;
+}
+.search .image{
+    width: 15px;
+    height: auto;
+}
+.search:hover{
+    background-color: #e9e6e6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* weather container */
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.weather .picture{
+    margin-top: 30px;
+    width: 180px;
+    height: auto;
+}
+.weather .temp{
+   font-size: 68px;
+   text-align: center;
+   margin-block: 50px;
+   font-weight: 500;
+}
+.weather .place{
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 37px;
+}
+
+/* styling the Container2 */
+.container2{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+/* styling the humidity Container and Wind Container */
+.humidity_container, .wind_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.humidity_container img{
+    width: 40px;
+    height: 30px;
+}
+.humidity_container .percent, .wind_container .speed{
+    font-size: 25px;
+}
+.humidity_container .text, .wind_container .text2{
+    margin-bottom: 10px;
+}
+.wind_container img{
+    width: 45px;
+    height: auto;
+}
+
+/* style the msg that display when the response status is invalid */
+.msg{
+    font-size: 25px;
+    color: rgb(242, 97, 97);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* rotate animation added to the sun png */
+.rotate{
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* ======= Media Query ======= */
+
+@media(max-width: 400px){
+    .container{
+        margin-top: 90px;
+    }
+    .card{
+        width: 340px;
+        height: auto;
+        padding: 10px;
+    }
+    .head{
+        font-size: 25px;
+    }
+    .input{
+        width: 220px;
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    .search_container{
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .weather .picture{
+        width: 190px;
+        height: auto;
+    }
+    .weather .temp{
+        font-size: 55px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+    .weather .place{
+        font-size: 35px;
+        margin-bottom: 45px;
+    }
+    .container2{
+        gap: 60px;
+    }
+    .humidity_container img{
+       width: 40px;
+       height: 27px;
+    }
+    .humidity_container .percent, .wind_container .speed{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .wind_container img{
+        width: 40px;
+        height: auto;
+    }
+    .humidity_container .text, .wind_container .text2{
+        font-size: 13px;
+    }
+}
