@@ -2,7 +2,7 @@
 A simple and interactive weather application built with HTML, CSS, and JavaScript.
 It fetches real-time weather data using the OpenWeatherMap API and displays temperature, humidity, wind speed, and weather conditions with dynamic icons and backgrounds.
 
-#✨ Features
+##✨ Features ##
 Search weather by city name
 * Displays:
   * 🌡️ Temperature (°C)
