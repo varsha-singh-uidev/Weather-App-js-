@@ -14,7 +14,7 @@ Search weather by city name
 * Responsive design for different screen sizes.
 
 ⚙️ Setup & Usage
-* Clone the repository: git clone https://github.com/your-username/Weather-App.git
+* Clone the repository: git clone https://github.com/varsha-singh-uidev/Weather-App-js-.git
 * Navigate to the project folder: cd Weather-App
 * Open index.html in your browser.
 
