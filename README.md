@@ -2,7 +2,7 @@
 A simple and interactive weather application built with HTML, CSS, and JavaScript.
 It fetches real-time weather data using the OpenWeatherMap API and displays temperature, humidity, wind speed, and weather conditions with dynamic icons and backgrounds.
 
-✨ Features 
+# ✨ Features 
 Search weather by city name
 * Displays:
   *  Temperature (°C)
@@ -13,12 +13,12 @@ Search weather by city name
 * Error handling for invalid city names.
 * Responsive design for different screen sizes.
 
-⚙️ Setup & Usage
+# ⚙️ Setup & Usage
 * Clone the repository: git clone https://github.com/varsha-singh-uidev/Weather-App-js-.git
 * Navigate to the project folder: cd Weather-App
 * Open index.html in your browser.
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 * HTML5
 * CSS3
 * JavaScript (ES6+)
